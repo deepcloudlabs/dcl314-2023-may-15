@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 01</title>
+    <script type="text/javascript">
+        // 1. Object-Based
+        let jack = {
+            fullname: "jack bauer",
+            identity: "11111111110",
+            salary: 100_000,
+            iban: "tr1",
+            fulltime: true,
+            departments: [
+                "IT" , "FINANCE"
+            ],
+            increaseSalary: function(rate){
+                this.salary *= (1.0+rate/100);
+            }
+        };
+        jack.increaseSalary(75);
+        // 2. Object-Oriented
+        class Employee {
+          constructor({fullname,identity,salary,iban,fulltime,departments}) {
+              this.fullname = fullname;
+              this.identity = identity;
+              this.salary = salary;
+              this.iban = iban;
+              this.fulltime = fulltime;
+              this.departments = departments;
+          }
+          increaseSalary(rate){
+              this.salary *= (1.0+rate/100);
+          }
+        };
+        let kate = new Employee({
+            fullname: "kate austen",
+            identity: "11111111110",
+            salary: 200_000,
+            iban: "tr2",
+            fulltime: false,
+            departments: [
+                "SALES" , "HR"
+            ]
+        });
+        kate.increaseSalary(50);
+        // 3. functional programming
+        // a) function
+        // b) asynchronous functions: Promise, async/await
+        // c) Higher-Order Functions
+        // d) Pure Function: lambda expression/arrow function
+        // e) Array: Filter/Map/Reduce/Sort/...
+        //    imperative programming vs declarative programming
+        // f) Generator Functions
+
+        // 4. event-driven programming
+        //    event? callback function -> asynchronous function
+
+        // 5. new features in es 6/7/8/...
+    </script>
+</head>
+<body>
+
+</body>
+</html>
