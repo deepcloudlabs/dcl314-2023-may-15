@@ -1,0 +1,15 @@
+{
+  "name": "world-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "world-service.js",
+  "scripts": {
+    "world-backend": "node world-service.js"
+  },
+  "dependencies": {
+    "mongoose": "^7.1.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
