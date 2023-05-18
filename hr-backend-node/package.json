@@ -4,7 +4,8 @@
   "description": "HR Backend",
   "main": "server.js",
   "scripts": {
-    "backend": "nodemon server.js"
+    "backend": "nodemon server.js",
+    "hr-ws-client": "node hr-ws-client.js"
   },
   "dependencies": {
     "nodemon": "^2.0.16",

@@ -16,6 +16,7 @@ class HrViewModel {
         ws_client.on("connect", () => {
             showInfoMessage("connected to the server.");
             ws_client.on("hr-events", event => {
+                showInfoMessage(`Event Type: ${event.eventType}`);
                 this.findAll();
             })
         });
